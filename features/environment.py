@@ -2,7 +2,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 
 def before_all(context):
-    print("🚀 自動化測試開始...")
+    print(" 自動化測試開始...")
     chrome_options = Options()
 
     # --- 關鍵設置 ---
@@ -16,5 +16,5 @@ def before_all(context):
     context.driver = webdriver.Chrome(options=chrome_options)
 
 def after_all(context):
-    print("🛑 測試結束，正在關閉瀏覽器...")
+    print(" 測試結束，正在關閉瀏覽器...")
     context.driver.quit()
