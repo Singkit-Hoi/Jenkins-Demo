@@ -4,7 +4,7 @@ pipeline {
     options {
         // 防止構建卡死，超過10分鐘自動停止
         timeout(time: 10, unit: 'MINUTES')
-        // 刪除了報錯的 encoding 選項
+        // 這裡刪除了報錯的 encoding，其他保持不變
     }
 
     stages {
