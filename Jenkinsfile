@@ -4,8 +4,7 @@ pipeline {
     options {
         // 防止構建卡死，超過10分鐘自動停止
         timeout(time: 10, unit: 'MINUTES')
-        // 解決 Windows 控制台中文亂碼問題
-        encoding('UTF-8')
+        // 刪除了報錯的 encoding 選項
     }
 
     stages {
